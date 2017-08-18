@@ -1,4 +1,7 @@
 @import "normalize.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "jquery.bxslider.min.css";
 @import "../fonts/fonts.css";
 
 
@@ -330,6 +333,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 90%;
         
         .works__button-wrapper {
             margin: 40px 0;
@@ -337,6 +341,7 @@
             justify-content: center;
             flex-wrap: wrap;
             max-width: 60%;
+            display: none; // As temp
             
             
                 .works__button {        
@@ -360,6 +365,11 @@
                 border-bottom: 3px solid #736357;
             }
         } 
+        
+        .works__container {
+            display: flex;
+            justify-content: center;
+        }
         
         .works__item__wrapper {
             display: flex;
@@ -507,18 +517,12 @@
         justify-content: space-between;
         margin-top: 80px;
         
-        .rev__arrow {
-            background: url(../images/content/arrow-left.png) 50% 50% no-repeat;
-            background-size: cover;
-            width: 34px;
-            height: 68px;
-            align-self: center;
-        }
         
         .rev__content   {
             
             display: flex;
             max-width: 80%;
+            justify-content: center;
             
             
                    .rev__item {
@@ -734,6 +738,10 @@
         display: none !important;
     }
     
+    .rev__adaptive-deleted {
+        display: none !important;      
+     }
+    
 }
 
 // Animation 
@@ -797,4 +805,79 @@
 .features__item:hover:before, .features__item:focus:before, .features__item:active:before {
   z-index: 50;
   right: 36%;
+}
+
+
+//Settings : Works.
+
+.bx-wrapper {
+    max-width: 80% !important;
+    box-shadow: none;
+    
+}
+
+.bx-viewport {
+    margin-top: 100px;
+}
+
+.bx-has-pager {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.bx-default-pager {
+    display: flex;
+
+}
+
+.bx-controls-direction {
+    display: none; //As temp
+}
+
+.active {
+    background: #736357 !important;
+}
+
+.bx-pager-link {
+    text-indent: 0px !important;
+    font-size: 14px !important;
+}
+
+// Owl settings.
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+    background: transparent !important;
+}
+
+.owl-prev {
+    background: url(../images/content/arrow-left.png) 50% 50% no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 9999;
+    width: 34px;
+    height: 68px;
+}
+
+.owl-next {
+    background: url(../images/content/arrow-left.png) 50% 50% no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    text-indent: 0 !important;
+    color: transparent;
+    z-index: 9999;
+    width: 34px;
+    height: 68px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
 }

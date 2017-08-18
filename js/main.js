@@ -94,3 +94,23 @@ $(document).ready(function(){
 $(function(){
  $('.first__man').plaxmove({ratioH:0.01,ratioV:0})
 });
+
+// Slider : Rev settings. 
+
+$('.owl-carousel').owlCarousel({ 
+items:1, 
+margin:10, 
+autoHeight:true, 
+loop:true, 
+nav:true 
+});
+
+// Slider : Works.
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+var SummDok = document.getElementById('active'),
+SummSumm='tra-la-la';
+SummDok.innerHTML = SummSumm
