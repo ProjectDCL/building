@@ -108,3 +108,16 @@ nav:true
 // Slider : Works.
 
 var mixer = mixitup('.works__item__wrapper');
+
+
+$(".works__button-wrapper button").click(function(e) {
+  e.preventDefault();
+  $(".works__button-wrapper button").removeClass('works__button-active');
+  $(this).addClass('works__button-active');
+})
+
+$(".adv__button").click(function(e) {
+  e.preventDefault();
+
+  $(this).addClass('adv__button-off');
+})

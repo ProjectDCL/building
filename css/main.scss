@@ -353,6 +353,8 @@
                 border: 2px solid #f2f2f2;
                 text-align: center;
                 margin-left: 20px;
+                outline: none;
+                transition: .3s all;
             } 
             
             .works__button-active { 
@@ -388,35 +390,6 @@
                     height: 235px;
                 }
                 
-                .works__photo-1 {
-                    background: url(../images/content/examples__1.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
-                
-                .works__photo-2 {
-                    background: url(../images/content/examples__2.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
-                
-                .works__photo-3 {
-                    background: url(../images/content/examples__3.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
-                
-                .works__photo-4 {
-                    background: url(../images/content/examples__4.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
-                
-                .works__photo-5 {
-                    background: url(../images/content/examples__5.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
-                
-                .works__photo-6 {
-                    background: url(../images/content/examples__6.jpg) 50% 50% no-repeat;
-                    background-size: cover;
-                }
                 
                 .works__text {
                      margin: 30px;
@@ -751,7 +724,15 @@
   box-shadow: 0 0 1px transparent;
   position: relative;
   overflow: hidden;
+  outline: none;    
+    
 }
+
+.adv__button-off {
+  display: none;   
+    
+}
+
 .adv__button:before {
   content: "";
   position: absolute;
