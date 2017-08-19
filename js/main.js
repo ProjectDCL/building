@@ -107,10 +107,4 @@ nav:true
 
 // Slider : Works.
 
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-
-var SummDok = document.getElementById('active'),
-SummSumm='tra-la-la';
-SummDok.innerHTML = SummSumm
+var mixer = mixitup('.works__item__wrapper');

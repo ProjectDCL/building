@@ -1,7 +1,6 @@
 @import "normalize.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
-@import "jquery.bxslider.min.css";
 @import "../fonts/fonts.css";
 
 
@@ -335,13 +334,12 @@
         flex-direction: column;
         width: 90%;
         
-        .works__button-wrapper {
+                .works__button-wrapper {
             margin: 40px 0;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             max-width: 60%;
-            display: none; // As temp
             
             
                 .works__button {        
@@ -376,7 +374,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 40px;
-            width: 65%;
+            width: 90%;
             
             .works__item {
             width: 370px;
@@ -813,7 +811,7 @@
 .bx-wrapper {
     max-width: 80% !important;
     box-shadow: none;
-    
+    margin-top: 40px;
 }
 
 .bx-viewport {
@@ -827,8 +825,13 @@
 }
 
 .bx-default-pager {
-    display: flex;
+    display: flex !important;
+    justify-content: center  !important;
+}
 
+.bx-pager-link {
+    width: 100px !important;
+    height: 40px !important;
 }
 
 .bx-controls-direction {
@@ -837,12 +840,9 @@
 
 .active {
     background: #736357 !important;
+    
 }
 
-.bx-pager-link {
-    text-indent: 0px !important;
-    font-size: 14px !important;
-}
 
 // Owl settings.
 
