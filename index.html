@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-   <div class="wrapper">
+   <div class="wrapper">            
        <section class="section first__slide">
-          
+                             <div class="review__connect-form" style="display: none;">
+                    <div class="rev__bg"></div>
+                    <div class="review__connect">
+                        <div class="form__title">Закажите звонок.</div>
+                        <div class="review__back">
+                            <svg class="close__svg">
+                                <use xlink:href="images/icons/sprite.svg#close"></use>
+                           </svg>
+                        </div>
+                        <form class="form__sendme" id="order-form">
+                                <label for="" class="form__name">
+                                    <input class="form-input" name="name" type="text" placeholder="Ваше имя">
+                                </label>
+                                <label for="" class="form__mail">
+                                    <input class="form-input" name="mail" type="text" placeholder="Ваш номер">
+                                </label>
+                                <label for="" class="form__message">
+                                    <textarea class="form-input form__message" name="comment" placeholder="Ваш комментарий"></textarea>
+                                </label>
+                                <div class="form__end">
+                                    <input href="#" class="form__button clear" name="" type="reset" value="Очистить">
+                                    <input href="#" class="form__button send" name="" type="submit" value="Отправить">
+                                </div>
+                        </form>
+                    </div>
+       </div>
            <div class="header">
                <div class="logo">
                    <svg class="logo__svg">
@@ -40,7 +65,6 @@
                </div>
                <div class="company__time">за 30 дней от 1 500 000 руб.</div>
            </div>
-           <div class="first__man"></div>
        </section>
        <section id="second" class="section second__slide">
           <div class="second__top">
@@ -109,7 +133,7 @@
                        <div class="adv__desc">Предоставим консультацию БЕСПЛАТНО!</div>
                    </div>
                    <div class="adv__right">
-                        <a href="#" class="adv__button">заказать звонок</a>
+                        <a href="#" class="adv__button review__call">заказать звонок</a>
                    </div>
                </div>
            </div>
@@ -299,17 +323,20 @@
            </div>
            <button href="#"  data-filter="all" class="adv__button works__button">смотреть еще</button>
        </section>
-       <section class="section video__section">
+       <section class="section video__slide">
+         <div id="video__section">
+        <div id="player"></div>
            <div class="video__mid">
-               <div class="video__play">
+               <a class="video__play">
                     <svg class="player__svg">
                         <use xlink:href="images/icons/sprite.svg#icon-player"></use>
                     </svg>
-               </div>
+               </a>
                <div class="video__title">Посмотрите нашу видеопрезентацию</div>
                <div class="video__desc">всё что вы хотели знать об этом, но боялись спросить</div>
                <div class="video__time">03:26</div>
            </div>
+         </div>
        </section>
        <section id="review" class="section rev__slide">
            <div class="second__title">Отзывы наших клиентов</div>
@@ -398,6 +425,7 @@
            </div>
        </section>
        <section id="footer" class="section footer__slide">
+           <div id="map"></div>
            <div class="footer">
                <div class="footer__content">
                    <div class="footer__left">
@@ -416,8 +444,12 @@
    </div>
     
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuQrp1f8_MxZJqT2F_fMv2AtbBGnorj0c&callback=initMap">
+    </script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/mixitup.min.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
